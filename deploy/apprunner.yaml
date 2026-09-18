@@ -1,0 +1,20 @@
+# AWS App Runner — point a service at this repo and it builds the Next.js
+# standalone server. For ECS/Fargate instead, push the Dockerfile image to ECR
+# and run it behind an ALB on port 3000.
+version: 1.0
+runtime: nodejs22
+build:
+  commands:
+    build:
+      - npm ci
+      - npm run build
+run:
+  runtime-version: 22
+  command: node .next/standalone/server.js
+  network:
+    port: 3000
+  env:
+    - name: NODE_ENV
+      value: production
+    - name: HOSTNAME
+      value: 0.0.0.0
