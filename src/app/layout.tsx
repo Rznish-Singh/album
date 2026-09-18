@@ -12,7 +12,7 @@ const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: [
 // const site = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gallery.rznish.dev'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site),
+  
   title: { default: 'rznish — photo gallery', template: '%s — rznish' },
   description:
     'Concert, studio and campus photography by rznish, filed in the order it was shot. Every frame keeps its camera data and the spot on the map where it was taken.',
