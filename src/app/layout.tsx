@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: { default: 'rznish — photo gallery', template: '%s — rznish' },
   description:
     'Concert, studio and campus photography by rznish, filed in the order it was shot. Every frame keeps its camera data and the spot on the map where it was taken.',
-  openGraph: { type: 'website', siteName: 'rznish', url: site },
+  openGraph: { type: 'website', siteName: 'rznish', },
   twitter: { card: 'summary_large_image' },
 }
 
