@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const plexMono = IBM_Plex_Mono({ subsets: ['latin'], variable: '--font-plex-mono', weight: ['400', '500'] })
 const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: ['500', '600'] })
 
-const site = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gallery.rznish.dev'
+// const site = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gallery.rznish.dev'
 
 export const metadata: Metadata = {
   metadataBase: new URL(site),
